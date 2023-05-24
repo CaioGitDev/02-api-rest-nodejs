@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts",
+    "dev": "tsx  watch src/server.ts",
     "knex": "node --loader  tsx ./node_modules/.bin/knex",
     "migrate:up": "knex migrate:latest",
     "migrate:down": "knex migrate:rollback",
@@ -22,6 +22,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
+    "@fastify/under-pressure": "^8.2.0",
     "dotenv": "^16.0.3",
     "fastify": "^4.17.0",
     "knex": "^2.4.2",
